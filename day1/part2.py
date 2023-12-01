@@ -10,15 +10,17 @@ def load_input():
 def get_calibration_value(line):
     result = []
 
-    line = line.replace("one", "o1e")
-    line = line.replace("two", "t2o")
-    line = line.replace("three", "t3e")
-    line = line.replace("four", "f4r")
-    line = line.replace("five", "f5e")
-    line = line.replace("six", "s6x")
-    line = line.replace("seven", "s7n")
-    line = line.replace("eight", "e8t")
-    line = line.replace("nine", "n9e")
+    line = (
+        line.replace("one", "o1e")
+            .replace("two", "t2o")
+            .replace("three", "t3e")
+            .replace("four", "f4r")
+            .replace("five", "f5e")
+            .replace("six", "s6x")
+            .replace("seven", "s7n")
+            .replace("eight", "e8t")
+            .replace("nine", "n9e")
+    )
 
     for i in range(len(line)):
         if line[i].isdigit():
